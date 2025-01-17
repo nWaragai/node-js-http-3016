@@ -15,7 +15,10 @@ const server = http
           res.write('<!DOCTYPE html><html lang="ja"><body>' +
             '<h1>アンケートフォーム</h1>' +
             '<a href="/enquetes">アンケート一覧</a>' +
-            '</body></html>');
+            '</body></html>' +
+            '<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCWGRL352P"></script>' +
+            '<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag("js", new Date()); gtag("config", "G-XCWGRL352P") </script>'
+            );
         } else if (req.url === '/enquetes') {
           res.write('<!DOCTYPE html><html lang="ja"><body>' +
             '<h1>アンケート一覧</h1><ul>' +
